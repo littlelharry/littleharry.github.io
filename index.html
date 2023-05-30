@@ -39,23 +39,12 @@
             aria-label="Text input with segmented button dropdown" placeholder="请粘贴视频网址>ㅂ<ﾉ ☆"
             title="请复制你想要看的视频网址，粘贴到此处点击播放即可！">
           <div class="input-group-addon">
-            <select class="url-c url-text" title="如发现视频无法正常播放请尝试更换视频线路！" id="jk">
-              <option name="jiekou1" value="https://www.nxflv.com/?url=">线路①</option>
-              <option name="jiekou2" value="https://jx.playerjy.com/?url=">线路②</option>
-              <option name="jiekou3" value="https://okjx.cc/?url=">线路③</option>
-              <option name="jiekou4" value="https://jx.bozrc.com:4433/player/?url=">线路④</option>
-              <option name="jiekou5" value="https://www.ckmov.com/?url=">线路⑤</option>
-              <option name="jiekou6" value="https://www.administratorw.com/admin.php?url=">线路⑥</option>
-              <option name="jiekou7" value="https://jx.m3u8.tv/jiexi/?url=">线路⑦</option>
-              <option name="jiekou8" value="https://jx.iztyy.com/svip/?url=">线路⑧</option>
-              <option name="jiekou9" value="https://www.h8jx.com/jiexi.php?url=">线路⑨</option>
-              <option name="jiekou10" value="https://vip.fxw.la/m3u8/index.php?url=">m3u8解析</option>
-              <option name="jiekou11" value="">直链</option>
+            <select class="url-c url-text" title="如视频无法正常播放请尝试更换视频线路！" id="jk">
+
             </select>
           </div>
           <div class="input-group-btn">
             <button type="button" class="btn btn-default btn-play" title="点击开始解析并开始播放" onclick="play()">解析播放</button>
-            <button type="button" class="btn btn-default btn-play" title="点击分享" onclick="share()">分享视频</button>
           </div>
         </div>
 
@@ -73,35 +62,6 @@
     </div>
   </div>
 
-
-  <!--侧滑-->
-  <section class="ch1">
-
-    <div class="pop" id="pop">
-      <div style="text-align:center;">
-        <input type="text" name="txt" id="fe_text" /><br>
-        <button type="button" name="copy" value="copy" onclick="copystr($('#fe_text').val())"
-          class="btn btn-default btn-play-s" title="点击复制">复制链接</button>
-        <button type="button" id="d_close_button" class="btn btn-default btn-play-s" title="点击关闭"
-          onclick="hiddendiv()">关闭弹窗</button>
-      </div>
-    </div>
-
-
-    <script>
-      function is_https() {
-        return 'https:' == location.protocol ? true : false;
-      }
-      if (navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)) {
-        alert("移动端修改浏览器标识(UA)到电脑(PC)端可屏蔽广告哦！");
-      }
-      $(function () {
-        $(".ch1").click(function () {
-          $(".ch1").toggle();
-        });
-      });
-
-    </script>
 </body>
 
 </html>
